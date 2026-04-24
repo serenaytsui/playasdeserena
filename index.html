@@ -10,17 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <h1> playas de serena </h1>
     <p> This altar is dedicated to the feeling I have when I'm at the beach facing the water and letting the rhythm of the sea wash over me. I would often go to the beach to find peace and soothe my anxiety. My hope for this website is to be able to evoke that feeling wherever I may be.</p>
     <a href="photos_main.html">
-        <img class="shell_main" src="images/shell1.png"></img>
+        <img id="shell1" src="images/shell1.png"></img>
+    <a href="photos_2.html">
+        <img id="shell2" src="images/shell2.png"></img>
+    <a href="photos_3.html">
+        <img id="shell3" src="images/shell3.png"></img>
+    <a href="photos_4.html">
+        <img id="shell4" src="images/shell4.png"></img>
     </a>
-    <img class="background-image" src="images/sand.jpg"></img>
-    <script src="index.js"></script>
-    <video><source src="video.mp4">
-    </video>
   </body>
+
   <style>
     .amarante-regular {
      font-family: "Amarante", serif;
@@ -29,12 +33,59 @@
 
     h1 {font-family: "Amarante";
     text-align: center;
-    font-size: 40px;
-    position:absolute;
-    top:75vh;
-    left:5vw;}
-    p {font-family: "Amarante";}
- 
+    font-size: 60px;
+    /*position:absolute;
+    top:80vh;
+    left:5vw;*/}
+    p {
+      text-shadow: 5px 5px 10px black;
+    }
+    #shell1 {
+    position: absolute;
+    top: 34vh;
+    left: 30vw;
+    }
+    #shell1:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+    }
+    #shell2 {
+    width: 25%;
+    position: absolute;
+    top: 40vh;
+    left: 70vw;
+    }
+    #shell2:hover {
+    cursor: pointer;
+    transform: rotate(48deg);
+    }
+    #shell3 {
+    width: 20%;
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+    }
+    #shell3:hover {
+    cursor: pointer;
+    transform: rotate(29deg);
+    }
+
+    #shell4 {
+    width: 20%;
+    position: absolute;
+    top: 70vh;
+    left: 50vw;
+    }
+    #shell4:hover {
+    cursor: pointer;
+    transform: rotate(29deg);
+    }
+
+
+    p {font-family: "Amarante";
+    font-size: medium;}
+
+    body {background-image:url(images/sand.jpg);}
   
   </style>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <h1>Enjoy.</h1>
     <p> Here is the second page.</p>
     <div class="carousel">
       <div class="group">
@@ -15,6 +16,8 @@
         <img class="photos" src="images/IMG_2545.JPG" ></img>
         <img class="photos" src="images/IMG_4732.jpeg"></img>
         <img class="photos" src="images/IMG_7169.jpg"></img>
+      </div>
+      <div class="group">
         <img class="photos" src="images/IMG_0118.JPG" ></img>
         <img class="photos" src="images/IMG_2545.JPG" ></img>
         <img class="photos" src="images/IMG_4732.jpeg"></img>
@@ -30,12 +33,12 @@
   </body>
   <style>
       body{ background: #043545;
-      background: rgba(204, 245, 255, 1);}
+      background: linear-gradient(90deg, rgba(4, 53, 69, 1) 0%, rgba(87, 128, 199, 1) 42%, rgba(204, 245, 255, 1) 100%);}
       
       .carousel {
         margin: 10px;
         width: 90%;
-        border: 5px solid white;
+        border: 5px solid black;
         display:flex;
         overflow-x: auto;
       }
@@ -45,12 +48,12 @@
         align-items: center;
         justify-content: center;
         gap: 1em;
-        animation: spin 45s infinite linear;
+        animation: spin 30s infinite linear;
         padding: 1em;
       }
       .photos{
         /*flex:0 0 5em;*/
-        height: 75vh;
+        height: 65vh;
         padding: 1em;
       }
       .carousel::-webkit-scrollbar {
@@ -58,7 +61,7 @@
       }
       @keyframes spin{
         from {translate: 0;}
-        to {translate:-50%}
+        to {translate:-100%}
 
       }
     </style>
